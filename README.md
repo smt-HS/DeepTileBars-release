@@ -26,3 +26,6 @@ spark-submit --master [your-spark-cluster] extract_file.py /path/to/corpus /path
 
 __Warning:__ python3 users may need to fix a bug in NLTK follow this [post](https://github.com/nltk/nltk/pull/1863).
 
+```bash
+spark-submit --master [your-spark-cluster] texttiling.py /path/to/clean-file /path/to/segmented-file
+```
