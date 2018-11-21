@@ -8,7 +8,7 @@ Implementation of [DeepTileBars: Visualizing Term Distribution of Neural Informa
 
 
 ### 2 Extracting and cleaning documents
- ```python
+ ```bash
 spark-submit --master [your-spark-cluster] extract_file.py /path/to/corpus /path/to/clean-file
 ```
 
