@@ -22,4 +22,7 @@ keras
 spark-submit --master [your-spark-cluster] extract_file.py /path/to/corpus /path/to/clean-file
 ```
 
+### 3 TextTiling
+
+__Warning:__ python3 users may need to fix a bug in NLTK follow this [post](https://github.com/nltk/nltk/pull/1863).
 
