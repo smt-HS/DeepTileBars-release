@@ -3,6 +3,16 @@
 Implementation of [DeepTileBars: Visualizing Term Distribution of Neural Information Retrieval](https://arxiv.org/abs/1811.00606)
 
 
+##Dependencies
+```
+pyspark
+nltk
+BeautifulSoup
+keras
+
+```
+
+
 ### 1 Preprocessing
 
 
