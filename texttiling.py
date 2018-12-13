@@ -8,9 +8,6 @@ def texttiling(source_direc, dest_direc):
     conf = SparkConf().setAppName("text_tiling")
     sc = SparkContext(conf=conf)
 
-    source_direc = "/Users/zhiwentang/DeepTileBars/dirty_extracted_docs_after_clean"
-    dest_direc = "/Users/zhiwentang/DeepTileBars/segment_docs_k_6/"
-
     files = sc.parallelize(os.listdir(source_direc))
 
     tokenizer = TextTilingTokenizer(k=6)
