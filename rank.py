@@ -139,17 +139,15 @@ def k_fold(img_direc, epochs=5):
     run_file = "k_fold_" + str(datetime.datetime.now())
     for fold in range(1, 6):
         print(fold)
-        # test_topics = folds[fold]
+
         train_topics = json.load(open("qrels/MQ2008" + "_train_" + str(fold) + ".json"))
-        print(len(train_topics))
+        # print(len(train_topics))
         random.shuffle(train_topics)
 
         pos_data, neg_data = None, None
         for i in train_topics:
-            # print(i)
             pos, neg = make_train_data(str(i), img_direc)
             if pos is None:
-                # print(i)
                 continue
             if pos_data is None:
                 pos_data = pos
@@ -158,7 +156,6 @@ def k_fold(img_direc, epochs=5):
                 pos_data = np.vstack((pos_data, pos))
                 neg_data = np.vstack((neg_data, neg))
 
-        print(pos_data.shape, neg_data.shape)
         scorer = train(pos_data, neg_data, epochs=epochs)
 
         doc_mat = make_test_data(fold, img_direc)

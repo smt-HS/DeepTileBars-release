@@ -10,7 +10,7 @@ nltk
 BeautifulSoup
 keras
 krovetzstemmer
-
+gensim
 ```
 
 ## Running the model
@@ -23,7 +23,7 @@ krovetzstemmer
 
 * Query file: download from [TREC](https://trec.nist.gov/data/million.query/08/08.million-query-topics.10001-20000.gz), unzip and put it in the `data/08.million-query-topics` 
 
-* LETOR-MQ2008 file: `./MQ2008/` is the folder downloaded from [Microsoft](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/#!letor-4-0)
+* LETOR-MQ2008 file: `./MQ2008/` is the folder downloaded from [Microsoft](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/#!letor-4-0).
  
 ### 1 Preprocessing
 ```bash
