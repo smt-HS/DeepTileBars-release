@@ -41,6 +41,8 @@ spark-submit --master [your-spark-cluster] --py-files trecweb_parser.py extract_
 
 __Warning:__ python3 users may need to fix a bug in NLTK follow this [post](https://github.com/nltk/nltk/pull/1863).
 
+_update_: As far as we know, NLTK 3.3.0 has fixed this bug.
+
 ```bash
 spark-submit --master [your-spark-cluster] texttiling.py /path/to/clean-file /path/to/segmented-file
 ```
