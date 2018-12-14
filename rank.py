@@ -131,7 +131,7 @@ def evaluate(run_file):
     args = shlex.split(arg_str)
     result = subprocess.run(args, stdout=subprocess.PIPE)
     print(result.stdout.decode())
-    print(open("result/"+output).read())
+    print(open("result/"+ run_file + ".out").read())
 
 
 def k_fold(img_direc, epochs=5):
