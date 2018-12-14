@@ -19,7 +19,7 @@ keras
 
 ### 2 Extracting and cleaning documents
  ```bash
-spark-submit --master [your-spark-cluster] extract_file.py /path/to/corpus /path/to/clean-file
+spark-submit --master [your-spark-cluster] --py-files trecweb_parser.py extract_file.py /path/to/corpus /path/to/clean-file
 ```
 
 ### 3 TextTiling
