@@ -4,3 +4,5 @@ __pycache__
 .DS_Store
 MQ2008
 data/word2vec.100
+data/word2vec.100.syn1neg.npy
+data/word2vec.100.wv.syn0.npy
