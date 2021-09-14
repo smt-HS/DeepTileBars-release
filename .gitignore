@@ -3,3 +3,4 @@
 __pycache__
 .DS_Store
 MQ2008
+data/word2vec.100
