@@ -17,7 +17,7 @@ gensim
 
 ### 0 Data Preparing
 
-* Trained gensim word2vec model: name the model as `word2vec.100`, and put it along with its auxiliary files in the `data/` directory.  
+* Trained gensim word2vec model: the model is named as `word2vec.100`. Download it from [Google Drive](https://drive.google.com/drive/folders/1aPtPMViMtePZ5GsKaL_QPsEfJ9yMbnxn?usp=sharing) and put it along with its auxiliary files in the `data/` directory.  
 
 * Inverse Document Frequency (IDF) file: `data/term2idf.json`, which is essentially a dictionary storing the mapping `word -> idf`. 
 
